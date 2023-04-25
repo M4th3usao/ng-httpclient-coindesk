@@ -1,5 +1,5 @@
 <!-- <hello id="title" name="{{ name }}"></hello> -->
-<h1 id="title"> BitCoin Price </h1>
+<h1 id="title">BitCoin Price</h1>
 <div class="container" *ngIf="getCurrentPrice()">
   <div class="updatedBtnSection">
     <input type="button" value="Update Price" (click)="update()" />
@@ -7,26 +7,28 @@
       >Atualizado em {{ this.bitcoinService.lastUpdate | date: 'full' }}</span
     >
   </div>
-  <hr />
-  <h2>Data/hora</h2>
-  <div>{{ this.getCurrentPrice().time.updated }}</div>
-  <h2>Taxas</h2>
-  <h3>{{ this.getCurrentPrice().bpi.USD.description }}</h3>
-  <h4>
-    <span>{{ this.getCurrentPrice().bpi.USD.symbol }}</span>
-    {{ this.getCurrentPrice().bpi.USD.rate }}
-  </h4>
-  <h3>{{ this.getCurrentPrice().bpi.GBP.description }}</h3>
-  <h4>
-    <span [innerHTML]="this.getCurrentPrice().bpi.GBP.symbol"></span>
-    {{ this.getCurrentPrice().bpi.GBP.rate }}
-  </h4>
-  <h3>{{ this.getCurrentPrice().bpi.EUR.description }}</h3>
-  <h4>
-    <span [innerHTML]="this.getCurrentPrice().bpi.EUR.symbol"></span>
-    {{ this.getCurrentPrice().bpi.EUR.rate }}
-  </h4>
-  <hr />
+
+  <div class="content-price">
+    <h2>Data/hora</h2>
+    <div>{{ this.getCurrentPrice().time.updated }}</div>
+    <h2>Taxas</h2>
+    <h3>{{ this.getCurrentPrice().bpi.USD.description }}</h3>
+    <h4>
+      <span>{{ this.getCurrentPrice().bpi.USD.symbol }}</span>
+      {{ this.getCurrentPrice().bpi.USD.rate }}
+    </h4>
+    <h3>{{ this.getCurrentPrice().bpi.GBP.description }}</h3>
+    <h4>
+      <span [innerHTML]="this.getCurrentPrice().bpi.GBP.symbol"></span>
+      {{ this.getCurrentPrice().bpi.GBP.rate }}
+    </h4>
+    <h3>{{ this.getCurrentPrice().bpi.EUR.description }}</h3>
+    <h4>
+      <span [innerHTML]="this.getCurrentPrice().bpi.EUR.symbol"></span>
+      {{ this.getCurrentPrice().bpi.EUR.rate }}
+    </h4>
+  </div>
+
   <table border="1">
     <tr>
       <th>Data/hora</th>
