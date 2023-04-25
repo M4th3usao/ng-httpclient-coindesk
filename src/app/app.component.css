@@ -6,6 +6,8 @@
   text-align: center;
   justify-content: center;
 
+  font-family: 'Bruno Ace', cursive;
+
   color: #fff;
   background-color: #000;
   border-bottom: 0.05em solid black;
@@ -17,6 +19,8 @@
   height: 100%;
   align-items: center;
   justify-content: center;
+
+  font-family: 'Poppins', sans-serif;
 }
 
 .updatedBtnSection {
@@ -24,29 +28,46 @@
   width: 30em;
   display: flex;
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
 
-  border: 0.1em solid black;
+  /* border: 0.1em solid black; */
   margin: 1em;
   padding: 1em;
+  background: #ffffff;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 
 .updatedBtnSection > input {
-  width: 9.375em;
+  width: 12.375em;
   height: 3.125em;
   margin: 1em;
+
+  /* background-color: #D75E18; */
+  background-color: #e85e0e;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.updatedBtnSection > span {
+  width: 70%;
+  text-align: center;
 }
 
 .content-price {
   width: 30em;
-  height: 20em;
+  height: 15em;
   text-align: center;
   align-items: center;
   justify-content: center;
 
   padding: 1em;
   margin: 1em;
-  border: 0.05em solid black;
+  /* border: 0.05em solid black; */
+
+  background: #ffffff;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
