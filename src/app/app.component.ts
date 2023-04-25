@@ -7,7 +7,7 @@ import { BitcoinService } from './bitcoin.service';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'BitCoin$';
+  name = 'BitCoin Price';
 
   constructor(public bitcoinService: BitcoinService){ }
 

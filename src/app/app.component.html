@@ -1,14 +1,14 @@
-<hello name="{{ name }}"></hello>
-<div *ngIf="getCurrentPrice()">
-  <hr />
-  <div>
-    <input type="button" value="Atualizar" (click)="update()" />
+<!-- <hello id="title" name="{{ name }}"></hello> -->
+<h1 id="title"> BitCoin Price </h1>
+<div class="container" *ngIf="getCurrentPrice()">
+  <div class="updatedBtnSection">
+    <input type="button" value="Update Price" (click)="update()" />
     <span
       >Atualizado em {{ this.bitcoinService.lastUpdate | date: 'full' }}</span
     >
   </div>
   <hr />
-  <h1>Data/hora</h1>
+  <h2>Data/hora</h2>
   <div>{{ this.getCurrentPrice().time.updated }}</div>
   <h2>Taxas</h2>
   <h3>{{ this.getCurrentPrice().bpi.USD.description }}</h3>

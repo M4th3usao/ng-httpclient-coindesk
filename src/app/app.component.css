@@ -1,3 +1,24 @@
-p {
-  font-family: Lato;
+#title {
+  border-bottom: 0.1em solid black;
+  text-align: center;
+}
+
+.updatedBtnSection {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 0.1em solid black;
+  margin: 1em;
+  padding: 1em;
+}
+
+.updatedBtnSection > input {
+  width: 9.375em;
+  height: 3.125em;
+  margin: 1em;
 }
