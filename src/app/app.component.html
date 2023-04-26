@@ -23,8 +23,12 @@
   </div>
 
   <div class="content-price">
-    <h2>Data/hora</h2>
-    <div>{{ this.getCurrentPrice().time.updated }}</div>
+    <h2>Details</h2>
+    <div class="row">
+      <h2>Data/hora</h2>
+      <p>{{ this.getCurrentPrice().time.updated }}</p>
+    </div>
+
     <h2>Taxas</h2>
     <h3>{{ this.getCurrentPrice().bpi.USD.description }}</h3>
     <h4>
