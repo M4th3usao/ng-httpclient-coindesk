@@ -24,27 +24,34 @@
 
   <div class="content-price">
     <h2>Details</h2>
-    <div class="row">
-      <h2>Data/hora</h2>
-      <p>{{ this.getCurrentPrice().time.updated }}</p>
-    </div>
+    <div id="content-details">
+      <div class="date">
+        <h3>Data/hora</h3>
+        <p>{{ this.getCurrentPrice().time.updated }}</p>
+      </div>
 
-    <h2>Taxas</h2>
-    <h3>{{ this.getCurrentPrice().bpi.USD.description }}</h3>
-    <h4>
-      <span>{{ this.getCurrentPrice().bpi.USD.symbol }}</span>
-      {{ this.getCurrentPrice().bpi.USD.rate }}
-    </h4>
-    <h3>{{ this.getCurrentPrice().bpi.GBP.description }}</h3>
-    <h4>
-      <span [innerHTML]="this.getCurrentPrice().bpi.GBP.symbol"></span>
-      {{ this.getCurrentPrice().bpi.GBP.rate }}
-    </h4>
-    <h3>{{ this.getCurrentPrice().bpi.EUR.description }}</h3>
-    <h4>
-      <span [innerHTML]="this.getCurrentPrice().bpi.EUR.symbol"></span>
-      {{ this.getCurrentPrice().bpi.EUR.rate }}
-    </h4>
+      <div class="price">
+        <h3>Taxas</h3>
+        <div class="row">
+          <h3>{{ this.getCurrentPrice().bpi.USD.description }}</h3>
+          <h4>
+            <span>{{ this.getCurrentPrice().bpi.USD.symbol }}</span>
+            {{ this.getCurrentPrice().bpi.USD.rate }}
+          </h4>
+        </div>
+
+        <h3>{{ this.getCurrentPrice().bpi.GBP.description }}</h3>
+        <h4>
+          <span [innerHTML]="this.getCurrentPrice().bpi.GBP.symbol"></span>
+          {{ this.getCurrentPrice().bpi.GBP.rate }}
+        </h4>
+        <h3>{{ this.getCurrentPrice().bpi.EUR.description }}</h3>
+        <h4>
+          <span [innerHTML]="this.getCurrentPrice().bpi.EUR.symbol"></span>
+          {{ this.getCurrentPrice().bpi.EUR.rate }}
+        </h4>
+      </div>
+    </div>
   </div>
 
   <table border="1">
