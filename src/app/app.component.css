@@ -55,8 +55,6 @@
 }
 
 .content-price {
-  width: 30em;
-  height: 24em;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -92,4 +90,10 @@
   border-radius: 5px;
 
   margin: 1em;
+}
+
+.content-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
